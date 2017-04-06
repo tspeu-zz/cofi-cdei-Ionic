@@ -1,28 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
+  <ion-navbar color="secondary">
+    <ion-title text-center class="logo">
       COFI CEDI
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding  >
+<!--
+  <div text-center class="tit">
 
-  <div text-center>
-  	<img src="assets/img/logo.png" style="width: 30%;height: 30%;">
-  	<h1>CODI CEDI</h1>
-  	<p>Prestamos</p>
-  	<h2>GRUPO 2</h2>
+  	<h1 >COFI CEDI</h1>
+    <p>Prástamos ràpidos y seguros!</p>
   </div>
-    
+-->
+  <ion-card class="fondo">
+    <img src="assets/img/corpo3.jpg"/>
+    <div class="card-title">COFI CEDI</div>
+    <div class="card-subtitle">Préstamos ràpidos y seguros!</div>
+  </ion-card>
 
 <div padding>
 	<p>
-		<button ion-button full (click)="gotoClientes()">CLIENTES</button>
+		<button ion-button full large (click)="gotoClientes()">CLIENTES</button>
 	</p>
 	<p>
-		<button ion-button full (click)="gotoSoli()">SOLICITUDES</button>
+		<button ion-button full large (click)="gotoSoli()">SOLICITUDES</button>
 	</p>
+  <p>
+    <button ion-button full large (click)="gotoClientes()">PRESTAMOS</button>
+  </p>
+  <p>
+    <button ion-button full large (click)="gotoSoli()">PRODUCTOS</button>
+  </p>
 </div>
+<p text-center>Grupo 2 Mainframe@2017</p>
 
 </ion-content>
+
+
+  <!--  <img src="assets/img/logo.png" class="img_tit" >-->

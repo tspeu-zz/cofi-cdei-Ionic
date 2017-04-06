@@ -4,27 +4,38 @@ import {HomePage} from '../../home/home';
 
 
 @Component({
-  selector: 'page-altacliente',
-  templateUrl: 'altacliente.html'
+  selector: 'page-solalta',
+  templateUrl: 'solalta.html'
 })
-export class AltaclientePage {
+export class SolAltaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   fecACtual : string;
-  codClieR :number ;
+  genero  = [];
+  numsoldRamdon : number;
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AltaclientePage');
+    console.log('ionViewDidLoad AltaSolPage');
     this.todayDate(this.fecACtual);
-    this.codClieR = this.getRndInteger(1,10000000);
+    this.numsoldRamdon = this.getRndInteger(1,99999);
   }
 
   public event = {
-    month: '1990-02-19', 
+    date: '0001-01-01'    
   }
 
-  genero :string = 'Mujer';
-  tipoD :string = 'DNI';
+  tipoI :string ='TITU' ; 
+
+  period :string = 'M';
+ 
+  estadoS :string ='TR';
+
+  codPro :string ='CREDVI';
+ 
+
+  
+  
+
 
   todayDate(datetoDay :string) :void{
 	let utc = new Date().toJSON().slice(0,10);
@@ -41,5 +52,7 @@ export class AltaclientePage {
    getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
  }
+
+
 
 }

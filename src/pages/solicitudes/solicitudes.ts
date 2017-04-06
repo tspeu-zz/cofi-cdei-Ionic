@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { SolActualPage, SolAltaPage, SolBorrarPage, SolBuscarPage} from './index';
+import {HomePage} from '../home/home'; 
 
-/*
-  Generated class for the Solicitudes page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-solicitudes',
   templateUrl: 'solicitudes.html'
@@ -17,6 +14,27 @@ export class SolicitudesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SolicitudesPage');
+  }
+
+  gotoALTA(){
+   	this.navCtrl.push(SolAltaPage);
+   }
+
+   gotoBusca(){
+   	this.navCtrl.push(SolBuscarPage);
+   }
+
+    gotoBaja(){
+   	this.navCtrl.push(SolBorrarPage);
+   }
+
+    gotoActual(){
+   	this.navCtrl.push(SolActualPage);
+   }
+
+   gotoHome(){
+    console.log(`go home`);
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

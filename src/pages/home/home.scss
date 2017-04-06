@@ -1,3 +1,84 @@
 page-home {
 
+.fondo{
+//background-image: url('../assets/img/corpo4.jpg');	
+//background-repeat: no-repeat;
+//background-size: 80% ;
+//background-attachment: fixed;
+//background-position: 50% 20%;
+
+
+
+
+  ion-card {
+    position: relative;
+    text-align: center;
+
+  }
+
+  .card-title {
+    position: absolute;
+    top: 10%;
+    left:20%;
+    font-size: 3.5em;
+    width: 100%;
+    font-weight: bold;
+    background-color:transparent;
+
+    color: #B2C300;
+    font-family:  'Poppins', sans-serif;
+  }
+
+  .card-subtitle {
+    font-size: 1.5em;
+    position: absolute;
+    top: 30%;
+    left:18%;
+    width: 100%;
+
+    color: #35261A;
+    font-weight: bold;
+  }
+
+}  
+
+.tit{	
+	background-image: url('../assets/img/corpo3.jpg');	
+background-repeat: no-repeat;
+//background-size: 80% ;
+//background-attachment: fixed;
+background-position: 50% 20%;
+	padding-top: 8%;
+	opacity: 0.5;
+    filter: alpha(opacity=70);
+	
+	
 }
+
+.tit h1{
+	color: #BCC72F;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.tit p{	
+	color: #35261A;
+	
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.logo{
+	color: #AFC309;
+}
+
+.img_tit{
+
+	width: 30%;
+	height: 30%;
+
+	background-image: #c6ff00;
+}
+
+}
+/*style="width: 30%;height: 30%;"*/

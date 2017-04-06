@@ -1,27 +1,24 @@
+
 <ion-header>
 
-  <ion-navbar >
-    <ion-title>DAR DE ALTA CLIENTE</ion-title>
+  <ion-navbar color="bankiaVerde2">
+    <ion-title>ACTUALIZAR SOLICITUD</ion-title>
   </ion-navbar>
+
 </ion-header>
 
 
 <ion-content padding>
-
 <ion-list>
 
   <ion-item>
     <ion-label stacked>Codigo Cliente</ion-label>
-    <ion-input  type="number" [(ngModel)]="codClieR"></ion-input>
+    <ion-input type="text" value=""></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label stacked>Tipo documento</ion-label>
-    <ion-select [(ngModel)]="tipoD">
-       <ion-option name="tipo" value= "DNI">DNI</ion-option>
-       <ion-option name="tipo" value= "NIE">NIE</ion-option>
-       <ion-option name="tipo" value= "PASAPORTE">PASAPORTE</ion-option><ion-option name="tipo" value= "TARJETA RES">TARJETA RES</ion-option><ion-option name="tipo" value= "CIF">CIF</ion-option>
-    </ion-select>   
+    <ion-input type="text"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -48,14 +45,17 @@
     <ion-label stacked>Fecha Nacimiento</ion-label>
   <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeStarts"></ion-datetime>
   </ion-item>
-
+<p>Sexo</p>
   <ion-item>
-    <ion-label stacked>Sexo</ion-label>
-    <ion-select [(ngModel)]="genero">
-       <ion-option name="tipo" value= "Mujer">Mujer</ion-option>
-       <ion-option name="tipo" value= "Hombre">Hombre</ion-option>
-    </ion-select>
-  </ion-item>
+	   <ion-label>Mujer</ion-label>
+	  <ion-radio color="secondary" value="mujer" checked="true"
+	  name="genero"></ion-radio>	  
+</ion-item>	
+  <ion-item>  
+	  <ion-label>Hombre</ion-label>
+	  <ion-radio color="secondary" value="hombre"
+	   name="genero"></ion-radio>
+</ion-item>
 
   <ion-item>
     <ion-label stacked>Cod Domicilio</ion-label>
@@ -88,13 +88,13 @@
 
 
 <div padding>
-  <button ion-button full large>Dar de Alta</button>
+  <button ion-button full large color="second2">Actualizar Datos</button>
 </div>
 
-
-<ion-fab top right edge>
+ <ion-fab top right edge>
     <button ion-fab  (click)="gotoHome()">
-      <ion-icon name="home"></ion-icon>
+    	<ion-icon name="home"></ion-icon>
     </button>
  </ion-fab>
+
 </ion-content>

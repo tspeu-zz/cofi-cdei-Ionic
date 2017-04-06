@@ -24,14 +24,56 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #387ef5,
-  secondary:  #32db64,
+  primary:    #795548,
+  secondary:  #35261A,
+  second2:	  #3e2723,
+  dark-2:     #5D4037,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
-);
+  dark:       #222,
+  primary-color-dark:   #5D4037,
+  primary-color:        #795548,
+  primary-color-light:  #D7CCC8,
+  primary-color-text:   #FFFFFF,
+  accent-color:         #CDDC39,
+  primary-text-color:   #212121,
+  secondary-text-color: #757575,
+  divider-color:        #BDBDBD,
+  marron :				#5d4037,
+  verde :				#cddc39,
+  logo:					#AFC309,
+  verdeFuerte:			#c6ff00,
+  bankiaVerde:			#B2C300,
+  bankiaVerde2:			#BCC72F,
+  bankiaVerde3:			#6F7800,
+  bankiaMarron:			#463525,
+  bankiaMarron2:		#35261A			
 
 
+
+ ); 
+
+
+$background-color:           #FFFFFF !default;
+$card-md-background-color:    #c6ff00 !default;
+$card-md-title-text-color:    #757575 !default;
+/// @prop - Background color of the button$colors-md, $colors-md, 
+$button-md-background-color: #B8C800 !default;
+
+/// @prop - Text color of the button
+$button-md-text-color:        #5D4037 !default;
+//color-contrast($colors-md, $button-md-background-color) 
+/// @prop - Text color of the activated segment button
+$segment-button-md-text-color-activated:   #c6ff00   !default;
+
+/// @prop - Border color of the activated segment button
+$segment-button-md-border-color-activated: #eeff41 !default;
+$toolbar-md-title-text-color:  #AFC309 ;
+
+/// @prop - Text color of the button
+//$button-md-text-color:       color-contrast($button-md-background-color) !default;
+
+//$list-md-background-color 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

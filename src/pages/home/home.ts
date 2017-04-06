@@ -1,7 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { NavController, Nav } from 'ionic-angular';
-import { ClientesPage, SolicitudesPage } from '../index'
+import { ClientesPage } from '../clientes/clientes'
+import {  SolicitudesPage } from '../solicitudes/solicitudes'
+
 
 @Component({
   selector: 'page-home',
@@ -22,6 +24,6 @@ export class HomePage {
 
  gotoSoli(){
  	console.log('pagina 2');
- 	///this.navCtrl.push(SolicitudesPage);
+ 	this.navCtrl.push(SolicitudesPage);
  }
 }

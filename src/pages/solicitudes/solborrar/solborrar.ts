@@ -4,18 +4,15 @@ import {HomePage} from '../../home/home';
 
 
 @Component({
-  selector: 'page-buscarcliente',
-  templateUrl: 'buscarcliente.html'
+  selector: 'page-solborrar',
+  templateUrl: 'solborrar.html'
 })
-export class BuscarclientePage {
+export class SolBorrarPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  busca: string = "dni";
-
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BuscarclientePage');
+    console.log('ionViewDidLoad BorrarSOLPage');
   }
 
    gotoHome(){

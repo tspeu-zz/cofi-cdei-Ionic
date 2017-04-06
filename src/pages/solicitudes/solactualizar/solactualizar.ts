@@ -4,18 +4,18 @@ import {HomePage} from '../../home/home';
 
 
 @Component({
-  selector: 'page-actuacliente',
-  templateUrl: 'actuacliente.html'
+  selector: 'page-solactualizar',
+  templateUrl: 'solactualizar.html'
 })
-export class ActuaclientePage {
+export class SolActualPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   fecACtual : string;
-
+  genero  = [];
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ActuaclientePage');
+    console.log('ionViewDidLoad ActuaSolicitudPage');
   }
 
   public event = {
@@ -23,8 +23,7 @@ export class ActuaclientePage {
     
   }
 
-  genero :string = 'Mujer';
-  tipoD :string = 'DNI';
+
 
   todayDate(datetoDay :string) :void{
 	let utc = new Date().toJSON().slice(0,10);
