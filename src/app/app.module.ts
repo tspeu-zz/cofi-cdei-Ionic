@@ -7,13 +7,15 @@ import { SolicitudesPage} from '../pages/solicitudes/solicitudes';
 import {AltaclientePage,BuscarclientePage,ActuaclientePage,BorrarclientePage} from '../pages/clientes/index';
 import { SolActualPage, SolAltaPage, SolBorrarPage, SolBuscarPage} from '../pages/solicitudes/index';
 //  solactualizar/solactualizar
+import {PrestamosPage} from '../pages/prestamos/prestamos';
+import {LoginPage} from '../pages/login/login';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ClientesPage, SolicitudesPage,
+    LoginPage,HomePage,
+    ClientesPage, SolicitudesPage,PrestamosPage,
     AltaclientePage,BuscarclientePage,ActuaclientePage,BorrarclientePage 
     ,SolActualPage, SolAltaPage, SolBorrarPage, SolBuscarPage
   ],
@@ -23,7 +25,8 @@ import { SolActualPage, SolAltaPage, SolBorrarPage, SolBuscarPage} from '../page
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,ClientesPage,SolicitudesPage,
+    LoginPage,HomePage,
+    ClientesPage,SolicitudesPage,PrestamosPage,
     AltaclientePage,BuscarclientePage,ActuaclientePage,BorrarclientePage
     ,SolActualPage , SolAltaPage, SolBorrarPage, SolBuscarPage
    
