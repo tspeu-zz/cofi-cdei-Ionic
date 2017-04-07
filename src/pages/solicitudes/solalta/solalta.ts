@@ -14,6 +14,7 @@ export class SolAltaPage {
   fecACtual : string;
   genero  = [];
   numsoldRamdon : number;
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad AltaSolPage');
     this.todayDate(this.fecACtual);
@@ -32,10 +33,6 @@ export class SolAltaPage {
 
   codPro :string ='CREDVI';
  
-
-  
-  
-
 
   todayDate(datetoDay :string) :void{
 	let utc = new Date().toJSON().slice(0,10);

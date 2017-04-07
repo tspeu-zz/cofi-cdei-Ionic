@@ -19,25 +19,27 @@ page-home {
   .card-title {
     position: absolute;
     top: 10%;
-    left:20%;
+    left:10%;
     font-size: 3.5em;
     width: 100%;
     font-weight: bold;
     background-color:transparent;
-
+    text-shadow: 1px 1px 2px #6F7800;
     color: #B2C300;
     font-family:  'Poppins', sans-serif;
   }
 
   .card-subtitle {
-    font-size: 1.5em;
+    font-size: 1.2em;
     position: absolute;
-    top: 30%;
-    left:18%;
+    top: 29%;
+    left:10%;
     width: 100%;
-
-    color: #35261A;
+     background-color:transparent;
+    color: #463525;
     font-weight: bold;
+    font-family:  'Open Sans', sans-serif;
+    text-shadow: 1px 1px 2px #fff;
   }
 
 }  

@@ -11,75 +11,65 @@
 <ion-content padding>
 <ion-list>
 
-  <ion-item>
+<ion-item>
     <ion-label stacked>Codigo Cliente</ion-label>
     <ion-input type="text" value=""></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label stacked>Tipo documento</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label stacked>Numero Solicitud</ion-label>
+    <ion-input type="number" [(ngModel)]="numsoldRamdon"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label stacked>Periodicidad</ion-label>
+    <ion-select [(ngModel)]="period">
+      <ion-option name="p" value= "M">Mensual</ion-option> 
+      <ion-option name="p" value= "S">Semestral</ion-option>
+      <ion-option name="p" value= "T">Trimestral</ion-option>
+      <ion-option name="p" value= "Anual">Anual</ion-option>
+    </ion-select>
   </ion-item>
 
   <ion-item>
-    <ion-label stacked>Numero Documento</ion-label>
-    <ion-input type="text" value=""></ion-input>
+    <ion-label stacked>Plazos</ion-label>
+    <ion-select [(ngModel)]="plazos">
+      <ion-option name="p" value= "M">12</ion-option> 
+      <ion-option name="p" value= "S">24</ion-option>
+      <ion-option name="p" value= "T">36</ion-option>
+      <ion-option name="p" value= "Anual">48</ion-option>
+    </ion-select>
   </ion-item>
 
   <ion-item>
-    <ion-label stacked>NOMBRE</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label stacked>Apellido1</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label stacked>Importe Préstamo</ion-label>
+    <ion-input type="number"></ion-input>
   </ion-item>
 
    <ion-item>
-    <ion-label stacked>Apellido2</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label stacked>Estado de la Solicitud</ion-label>
+    <ion-select [(ngModel)]="estadoS">
+      <ion-option name="p" value= "TR">TR</ion-option> 
+      <ion-option name="p" value= "PA">PA</ion-option>
+      <ion-option name="p" value= "AP">AP</ion-option>
+      <ion-option name="p" value= "DN">DN</ion-option>
+      <ion-option name="p" value= "DP">DP</ion-option>
+      <ion-option name="p" value= "CA">CA</ion-option>
+    </ion-select>
   </ion-item>
+
 
   <ion-item>
-    <ion-label stacked>Fecha Nacimiento</ion-label>
-  <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeStarts"></ion-datetime>
-  </ion-item>
-<p>Sexo</p>
-  <ion-item>
-	   <ion-label>Mujer</ion-label>
-	  <ion-radio color="secondary" value="mujer" checked="true"
-	  name="genero"></ion-radio>	  
-</ion-item>	
-  <ion-item>  
-	  <ion-label>Hombre</ion-label>
-	  <ion-radio color="secondary" value="hombre"
-	   name="genero"></ion-radio>
-</ion-item>
-
-  <ion-item>
-    <ion-label stacked>Cod Domicilio</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-   <ion-item>
-    <ion-label stacked>Cod Postal</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-   <ion-item>
-    <ion-label stacked>Telefono</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label stacked>CCC</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label stacked>Fecha Alta</ion-label>
-<ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="fecACtual"></ion-datetime>
+    <ion-label stacked>Codigo de producto</ion-label>
+    <ion-select [(ngModel)]="codPro">
+      <ion-option name="p" value= "CREDVI">CREDVI</ion-option>
+      <ion-option name="p" value= "CREDRE">CREDRE</ion-option>
+      <ion-option name="p" value= "CREDVJ">CREDVJ</ion-option>
+      <ion-option name="p" value= "CREDDE">CREDDE</ion-option>
+      <ion-option name="p" value= "CREDVA">CREDVA</ion-option>
+      <ion-option name="p" value= "CREDCO">CREDCO</ion-option>
+    </ion-select>
   </ion-item>
 
 

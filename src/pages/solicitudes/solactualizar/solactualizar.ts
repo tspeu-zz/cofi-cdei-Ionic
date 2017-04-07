@@ -13,16 +13,24 @@ export class SolActualPage {
 
   fecACtual : string;
   genero  = [];
+  numsoldRamdon : number;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActuaSolicitudPage');
+    this.numsoldRamdon = this.getRndInteger(1,99999);
   }
 
   public event = {
     month: '1990-02-19',
     
   }
+  tipoI :string ='TITU' ; 
 
+  period :string = 'M';
+ 
+  estadoS :string ='TR';
+
+  codPro :string ='CREDVI';
 
 
   todayDate(datetoDay :string) :void{
@@ -37,4 +45,8 @@ export class SolActualPage {
   	console.log(`go home`);
   	this.navCtrl.setRoot(HomePage);
   }
+
+     getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+ }
 }
